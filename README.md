@@ -1,12 +1,7 @@
-# React + Vite
+date 23-03-2025
+body.jsx :: Routes placing with parent and Child
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Point-1:: decide who is your Parent Component then-> place it on top with <Routes> </Routes>(it will not have self Closing tag)
+2:: Now all the Child Components will come in between <Routes> </Routes> with self Closing Tag ::=><Routes/>
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+3:: NOw we can use <Outlet/> for all of child ,Now in the Browser all Child Compo will show below of the Parent i.e parent will be there with all child Components
